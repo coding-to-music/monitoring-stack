@@ -1,0 +1,5 @@
+container_binary: podman
+dev-box_admin_user: secret-password
+dev-box_admin_password: secret-password
+dev-box_port: 4000
+dev-box_allow_embedding: True

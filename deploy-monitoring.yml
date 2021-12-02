@@ -1,4 +1,11 @@
 ---
+- hosts: devbox
+  become: true
+  tasks:
+    - block:
+        - import_role:
+            name: dev-box
+
 - hosts: all
   become: true
   tasks:
@@ -23,3 +30,4 @@
             name: prometheus
         - import_role:
             name: grafana
+

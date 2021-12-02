@@ -12,6 +12,13 @@
   register: result
   until: result is succeeded
 
+# - name: install firewalld
+#   package:
+#     name: ['firewalld']
+#     update_cache: yes
+#   register: result
+#  until: result is succeeded
+
 - name: add docker's gpg key
   apt_key:
     url: 'https://download.docker.com/linux/{{ ansible_distribution | lower }}/gpg'

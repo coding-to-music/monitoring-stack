@@ -33,7 +33,7 @@ git clone https://github.com/45drives/monitoring-stack.git
 |--------------------------	|-------	|
 | Prometheus Port          	| 9091  	|
 | Alertmanager Port        	| 9093  	|
-| Grafana Port             	| 3000  	|
+| Grafana Port             	| 3456  	|
 | Grafana Default User     	| admin 	|
 | Grafana Default Password 	| admin 	|
 | Node Exporter Port       	| 9100  	|

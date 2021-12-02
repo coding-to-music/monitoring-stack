@@ -18,6 +18,8 @@
     - "/etc/grafana/provisioning/datasources"
     - "/etc/grafana/provisioning/dashboards"
 
+- debug: var=out.stdout_lines
+
 - name: write grafana.ini
   template:
     src: grafana.ini.j2

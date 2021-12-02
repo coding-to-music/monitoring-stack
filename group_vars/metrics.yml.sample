@@ -12,7 +12,7 @@ alertmanager_receive_email:
   - 'dummy@localhost'
 alertmanager_require_tls: 'false'
 # GRAFANA
-grafana_port: 3000
+grafana_port: 3456
 grafana_admin_user: admin
 grafana_admin_password: admin
 grafana_default_theme: light

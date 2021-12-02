@@ -1,0 +1,47 @@
+---
+- name: set fact container_binary to docker centos 7
+  set_fact: 
+    container_binary: "docker"
+  when:
+    - ansible_distribution == 'CentOS'
+    - ansible_distribution_major_version == '7'
+
+- name: set fact container_binary to docker debian
+  set_fact: 
+    container_binary: "docker"
+  when:
+    - ansible_distribution == 'Debian'
+
+- name: ship ssh id_ed25519 key
+  template:
+    src: /root/.ssh/id_ed25519
+    dest: /root/.ssh/id_ed25519
+    owner: root
+    group: root
+    mode: 0600
+
+- name: ship ssh id_ed25519.pub key
+  template:
+    src: /root/.ssh/id_ed25519.pub
+    dest: /root/.ssh/id_ed25519.pub
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Write .bash_aliases files
+  copy:
+    src: "{{ item }}"
+    dest: "/root/"
+    owner: root
+    group: root
+    mode: 0644
+  with_items:
+    - .bash_aliases
+
+# - name: create grafana user
+#   user:
+#     name: grafana
+#     shell: '/bin/false'
+#     createhome: false
+#     system: true
+    

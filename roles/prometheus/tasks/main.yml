@@ -57,6 +57,7 @@
     immediate: true
     state: enabled
   with_items:
+    - "{{ grafana_port }}"
     - "{{ prometheus_port }}"
     - "{{ alertmanager_port }}"
     - "{{ alertmanager_cluster_port }}"
