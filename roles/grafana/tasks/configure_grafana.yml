@@ -61,6 +61,8 @@
   with_items:
     - system-overview.json
     - network-overview.json
+    - hello-world.json
+    - test1.json
 
 - name: copy grafana SSL certificate file
   copy:
