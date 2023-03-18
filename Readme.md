@@ -134,7 +134,7 @@ ansible-playbook -i hosts deploy-monitoring.yml --ask-become-pass
 - To uninstall monitoring stack
 
 ```sh
-ansible-playbook -i hosts purge-monitoring.yml
+ansible-playbook -i hosts purge-monitoring.yml --ask-become-pass
 ```
 
 # Verification

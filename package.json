@@ -1,0 +1,16 @@
+{
+  "name": "monitoring-stack",
+  "version": "1.0.0",
+  "description": "# 🚀 Collection of ansible roles to deploy prometheus/alertmanager/grafana monitoring tools 🚀",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "deploy": "git add . && git commit -m Build && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
